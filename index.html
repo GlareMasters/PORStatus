@@ -1,110 +1,130 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	    <link rel="icon" type="image/png" href="http://www.piratesonline.us/images/favicon.ico">
-	<script type="text/javascript">
-	var url = "https://www.piratesforums.com/data/attachments/0/921-3da8f1027356973f7c203c114e58c925.jpg";
-	var img = new Image();
-	img.src = url;
+<head>
+    <link href="http://www.piratesonline.us/images/favicon.ico" rel="icon"
+    type="image/png">
+    <script type="text/javascript">
+    var url = "https://www.piratesforums.com/data/attachments/0/921-3da8f1027356973f7c203c114e58c925.jpg";
+    var img = new Image();
+    img.src = url;
 
-	img.onload = function()
-	{
-		// If the server is up, do this.
-		document.getElementById('forumsUp').innerHTML = '<font color="#91FF00">Online!</font>';
-		document.getElementById("service2").style.borderColor = "#91FF00";
-		
-	}
+    img.onload = function()
+    {
+        // If the server is up, do this.
+        document.getElementById('forumsUp').innerHTML = '<font color="#91FF00">Online!<\/font>';
+        document.getElementById("service2").style.borderColor = "#91FF00";
+        
+    }
 
-	img.onerror = function()
-	{
-		// If the server is down, do that.
-		document.getElementById('forumsUp').innerHTML = '<font color="#FF0015">Offline!</font>';
-		document.getElementById("service2").style.borderColor = "#FF0015";
-	}
-</script>
-	<script type="text/javascript">
-	var url = "http://www.piratesonline.us/images/test_server_invite.png";
-	var img = new Image();
-	img.src = url;
+    img.onerror = function()
+    {
+        // If the server is down, do that.
+        document.getElementById('forumsUp').innerHTML = '<font color="#FF0015">Offline!<\/font>';
+        document.getElementById("service2").style.borderColor = "#FF0015";
+    }
+    </script>
+    <script type="text/javascript">
+    var url = "http://www.piratesonline.us/images/test_server_invite.png";
+    var img = new Image();
+    img.src = url;
 
-	img.onload = function()
-	{
-		// If the server is up, do this.
-		document.getElementById('webUp').innerHTML = '<font color="#91FF00">Online!</font>';
-		document.getElementById("service1").style.borderColor = "#91FF00";
-	}
+    img.onload = function()
+    {
+        // If the server is up, do this.
+        document.getElementById('webUp').innerHTML = '<font color="#91FF00">Online!<\/font>';
+        document.getElementById("service1").style.borderColor = "#91FF00";
+    }
 
-	img.onerror = function()
-	{
-		// If the server is down, do that.
-		document.getElementById('webUp').innerHTML = '<font color="#FF0015">Offline!</font>';
-		document.getElementById("service1").style.borderColor = "#FF0015";
-	}
-</script>
-<script type="text/javascript">
-	var url = "http://www.piratesonline.us/images/test_server_invite.png";
-	img.src = url;
+    img.onerror = function()
+    {
+        // If the server is down, do that.
+        document.getElementById('webUp').innerHTML = '<font color="#FF0015">Offline!<\/font>';
+        document.getElementById("service1").style.borderColor = "#FF0015";
+    }
+    </script>
+    <script type="text/javascript">
+    var url = "http://www.piratesonline.us/images/test_server_invite.png";
+    img.src = url;
 
-	img.onload = function()
-	{
-		// If the server is up, do this.
-		document.getElementById('serverUp').innerHTML = '<font color="#91FF00">Online!</font>';
-		document.getElementById("service3").style.borderColor = "#91FF00";
-	}
+    img.onload = function()
+    {
+        // If the server is up, do this.
+        document.getElementById('serverUp').innerHTML = '<font color="#91FF00">Online!<\/font>';
+        document.getElementById("service3").style.borderColor = "#91FF00";
+    }
 
-	img.onerror = function()
-	{
-		// If the server is down, do that.
-		document.getElementById('serverUp').innerHTML = '<font color="#FF0015">Offline!</font>';
-		document.getElementById("service3").style.borderColor = "#FF0015";
-	}
-</script>
-		<title>POR | STATUS</title>
-		
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400">
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="container">
-				<h1 ><center><font size="6">Current status of Pirates Online Retribution services</font></center></h1>
-				<div class="text-center">
-					<div id="session" class="span2">
-						<div id="service1">
-							<div class="name"><font color="white">POR Website</font></div>
-							<h2 id="webUp">Loading…</h2>
-						</div>
-						<div class="uptime">&nbsp;</div>
-					</div>
-					
-					<div id="forums" class="span2">
-						<div id="service2">
-							<div class="name"><font color="white">POR Forums</font></div>
-							<h2 id="forumsUp">Loading…</h2>
-						</div>
-						<div class="uptime">&nbsp;</div>
-					</div>
-					
-					<div id="website" class="span2">
-						<div id="service3">
-							<div class="name"><font color="white">POR Servers</font></div>
-							<h2 id="serverUp">Loading…</h2>
-						</div>
-						<div class="uptime">&nbsp;</div>
-					</div>
-					
-				</div>
-				<center>Please note that this site is not always 100% accurate.<br> Unless a server appears as offline, you should be able to connect just fine!</center>
-				</div>
-			</div>
-		</div>
-		<br><br><br><br>
-		<center><button class="button"type="button" onClick="refreshPage()">Refresh</button>
-
-<script>
-function refreshPage(){
-    window.location.reload();
-} 
-</script>
-	</body>
+    img.onerror = function()
+    {
+        // If the server is down, do that.
+        document.getElementById('serverUp').innerHTML = '<font color="#FF0015">Offline!<\/font>';
+        document.getElementById("service3").style.borderColor = "#FF0015";
+    }
+    </script>
+    <title>POR | STATUS</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400" rel=
+    "stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <center>
+                <h1><font size="6">Current status of Pirates Online Retribution
+                services</font></h1>
+            </center>
+            <div class="text-center">
+                <div class="span2" id="session">
+                    <div id="service1">
+                        <div class="name">
+                            <font color="white">POR Website</font>
+                        </div>
+                        <h2 id="webUp">Loading…</h2>
+                    </div>
+                    <div class="uptime">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="span2" id="forums">
+                    <div id="service2">
+                        <div class="name">
+                            <font color="white">POR Forums</font>
+                        </div>
+                        <h2 id="forumsUp">Loading…</h2>
+                    </div>
+                    <div class="uptime">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="span2" id="website">
+                    <div id="service3">
+                        <div class="name">
+                            <font color="white">POR Servers</font>
+                        </div>
+                        <h2 id="serverUp">Loading…</h2>
+                    </div>
+                    <div class="uptime">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <center>
+                Please note that this site is not always 100% accurate.<br>
+                Unless a server appears as offline, you should be able to
+                connect just fine!
+            </center>
+        </div>
+    </div><br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <button class="button" onclick="refreshPage()" type=
+        "button">Refresh</button> 
+        <script>
+        function refreshPage(){
+        window.location.reload();
+        } 
+        </script> 
+    </center>
+</body>
 </html>
