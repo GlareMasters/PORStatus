@@ -67,7 +67,7 @@
 	<body>
 		<div class="wrapper">
 			<div class="container">
-				<h1 class="text-center">Pirates Online Retribution<br>Status</h1>
+				<h1 ><center><font size="6">Current status of Pirates Online Retribution services</font></center></h1>
 				<div class="text-center">
 					<div id="session" class="span2">
 						<div id="service1">
@@ -87,16 +87,24 @@
 					
 					<div id="website" class="span2">
 						<div id="service3">
-							<div class="name"><font color="white">POR Server</font></div>
+							<div class="name"><font color="white">POR Servers</font></div>
 							<h2 id="serverUp">Loading…</h2>
 						</div>
 						<div class="uptime">&nbsp;</div>
 					</div>
 					
 				</div>
-				
+				<center>Please note that this site is not always 100% accurate. Unless a server appears as offline, you should be able to connect just fine!</center>
 				</div>
 			</div>
 		</div>
+		<br><br><br><br>
+		<center><button class="button"type="button" onClick="refreshPage()">Refresh</button>
+
+<script>
+function refreshPage(){
+    window.location.reload();
+} 
+</script>
 	</body>
 </html>
