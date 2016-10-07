@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script type="text/javascript">
+	var url = "https://www.piratesforums.com/data/attachments/0/921-3da8f1027356973f7c203c114e58c925.jpg";
+	var img = new Image();
+	img.src = url;
+
+	img.onload = function()
+	{
+		// If the server is up, do this.
+		document.getElementById('forumsUp').innerHTML = '<font color="#91FF00">Online!</font>';
+		document.getElementById("service2").style.borderColor = "#91FF00";
+		
+	}
+
+	img.onerror = function()
+	{
+		// If the server is down, do that.
+		document.getElementById('forumsUp').innerHTML = '<font color="#FF0015">Offline!</font>';
+		document.getElementById("service2").style.borderColor = "#FF0015";
+	}
+</script>
+	<script type="text/javascript">
+	var url = "http://www.piratesonline.us/images/test_server_invite.png";
+	var img = new Image();
+	img.src = url;
+
+	img.onload = function()
+	{
+		// If the server is up, do this.
+		document.getElementById('webUp').innerHTML = '<font color="#91FF00">Online!</font>';
+		document.getElementById("service1").style.borderColor = "#91FF00";
+	}
+
+	img.onerror = function()
+	{
+		// If the server is down, do that.
+		document.getElementById('webUp').innerHTML = '<font color="#91FF00">Online!</font>';
+		document.getElementById("service1").style.borderColor = "#91FF00";
+	}
+</script>
+		<title>Pirates Online Retribution</title>
+		
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<h1 class="text-center">Pirates Online Retribution<br>Status</h1>
+				<div class="text-center">
+					<div id="session" class="span2">
+						<div id="service1">
+							<div class="name"><font color="white">POR Website</font></div>
+							<h2 id="webUp">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+					<div id="forums" class="span2">
+						<div id="service2">
+							<div class="name"><font color="white">POR Forums</font></div>
+							<h2 id="forumsUp">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+					<div id="website" class="span2">
+						<div id="service3">
+							<div class="name"><font color="white">POR Server</font></div>
+							<h2 class="status">In Beta</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+				</div>
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
