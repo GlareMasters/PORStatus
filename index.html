@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<head> 
-<meta http-equiv="refresh" content="30" />
+    <meta content="30" http-equiv="refresh">
     <link href="http://www.piratesonline.us/images/favicon.ico" rel="icon"
     type="image/png">
     <script type="text/javascript">
@@ -15,7 +14,7 @@
         // If the server is up, do this.
         document.getElementById('webUp').innerHTML = '<a href="http://piratesonline.us/" target="_blank"><font color="#91FF00">Online!<\/font>';
         document.getElementById("service1").style.borderColor = "#91FF00";
-		document.getElementById('serverUp').innerHTML = '<font color="#91FF00">Online!<\/font>';
+        document.getElementById('serverUp').innerHTML = '<font color="#91FF00">Online!<\/font>';
         document.getElementById("service3").style.borderColor = "#91FF00";
     }
 
@@ -24,11 +23,11 @@
         // If the server is down, do that.
         document.getElementById('webUp').innerHTML = '<font color="#FF0015">Offline!<\/font>';
         document.getElementById("service1").style.borderColor = "#FF0015";
-		document.getElementById('serverUp').innerHTML = '<font color="#FF0015">Offline!<\/font>';
+        document.getElementById('serverUp').innerHTML = '<font color="#FF0015">Offline!<\/font>';
         document.getElementById("service3").style.borderColor = "#FF0015";
     }
     </script>
-	    <script type="text/javascript">
+    <script type="text/javascript">
     var url = "http://www.piratesonline.us/images/test_server_invite.png";
     var img = new Image();
     img.src = url;
@@ -48,99 +47,138 @@
         document.getElementById("service2").style.borderColor = "#FF0015";
     }
     </script>
+
     <title>POR | STATUS</title>
     <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="wrapper">
-	<center><img src="images/logo.png"></center>
+        <center>
+            <img src="images/logo.png">
+        </center>
+
+
         <div class="container">
-		<center><h1><font size="6">Current status of Pirates Online Retribution
-                services</font></h1>
-            <div class="text-center">
-                <div class="span2" id="session">
-                    <div id="service1">
-                        <div class="name">
-                            <font size="5"color="white"><strong>Website</strong></font>
-                        </div>
-                        <h2 id="webUp">Loading…</h2>
-                    </div>
-                    <div class="uptime">
-                        &nbsp;
-                    </div>
-                </div>
-                <div class="span2" id="forums">
-                    <div id="service2">
-                        <div class="name">
-                            <font size="5"color="white"><strong>Forums</strong></font>
-                        </div>
-                        <h2 id="forumsUp">Loading…</h2>
-                    </div>
-                    <div class="uptime">
-                        &nbsp;
-                    </div>
-                </div>
-                <div class="span2" id="website">
-                    <div id="service3">
-                        <div class="name">
-                            <font size="5"color="white"><strong>Servers</strong></font>
-                        </div>
-                        <h2 id="serverUp">Loading…</h2>
-                    </div>
-                    <div class="uptime">
-                        &nbsp;
-                    </div>
-                </div>
-            </div>
             <center>
-                Please note that this site is not always 100% accurate.<br>
-                Unless a server appears as offline, you should be able to
-                connect just fine!
+                <h1><font size="6">Current status of Pirates Online Retribution
+                services</font>
+                </h1>
+
+
+                <div class="text-center">
+                    <div class="span2" id="session">
+                        <div id="service1">
+                            <div class="name">
+                                <font color="white" size=
+                                "5"><strong>Website</strong></font>
+                            </div>
+
+
+                            <h2 id="webUp">Loading…</h2>
+                        </div>
+
+
+                        <div class="uptime">
+                            &nbsp;
+                        </div>
+                    </div>
+
+
+                    <div class="span2" id="forums">
+                        <div id="service2">
+                            <div class="name">
+                                <font color="white" size=
+                                "5"><strong>Forums</strong></font>
+                            </div>
+
+
+                            <h2 id="forumsUp">Loading…</h2>
+                        </div>
+
+
+                        <div class="uptime">
+                            &nbsp;
+                        </div>
+                    </div>
+
+
+                    <div class="span2" id="website">
+                        <div id="service3">
+                            <div class="name">
+                                <font color="white" size=
+                                "5"><strong>Servers</strong></font>
+                            </div>
+
+
+                            <h2 id="serverUp">Loading…</h2>
+                        </div>
+
+
+                        <div class="uptime">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+
+
+                <center>
+                    Please note that this site is not always 100% accurate.<br>
+                    Unless a server appears as offline, you should be able to
+                    connect just fine!
+                </center>
             </center>
         </div>
     </div>
-					<hr class="dotted">
-					
-					<div class="text-center">
-						<div class="footer-line">Created by <a target="_blank" href="https://piratesforums.com/members/glare-masters.2694/">Glare Masters</a></div>
-						<div class="footer-line">
 
-						</div>
-					</div>
-					
-					<hr class="dotted">
-					
-					<center><button class="button">Refreshing in <span id="countdown" class="timer"></span></button>
-<script>
-var seconds = 30;
-function secondPassed() {
-    var minutes = Math.round((seconds - 30)/60);
-    var remainingSeconds = seconds % 60;
-    if (remainingSeconds < 10) {
+    <hr class="dotted">
+
+
+    <div class="text-center">
+        <div class="footer-line">
+            Created by <a href=
+            "https://piratesforums.com/members/glare-masters.2694/" target=
+            "_blank">Glare Masters</a>
+        </div>
+
+
+        <div class="footer-line">
+        </div>
+    </div>
+
+    <hr class="dotted">
+
+
+    <center>
+        <button class="button">Refreshing in <span class="timer" id=
+        "countdown"></span></button> 
+        <script>
+        var seconds = 30;
+        function secondPassed() {
+        var minutes = Math.round((seconds - 30)/60);
+        var remainingSeconds = seconds % 60;
+        if (remainingSeconds < 10) {
         remainingSeconds = "0" + remainingSeconds;  
-    }
-    document.getElementById('countdown').innerHTML = remainingSeconds;
-    if (seconds == 0) {
+        }
+        document.getElementById('countdown').innerHTML = remainingSeconds;
+        if (seconds == 0) {
         clearInterval(countdownTimer);
-		window.location.reload();
-    } else {
+        window.location.reload();
+        } else {
         seconds--;
-    }
-}
- 
-var countdownTimer = setInterval('secondPassed()', 1000);
-</script><br>
+        }
+        }
+
+        var countdownTimer = setInterval('secondPassed()', 1000);
+        </script><br>
+    </center>
 
 
-</center>
-					
-					<div class="pull-right muted">
-					</div>
-					
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
-</div>
+    <div class="pull-right muted">
+    </div>
+
+
+    <div class="clearfix">
+    </div>
 </body>
 </html>
