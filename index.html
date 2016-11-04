@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <meta content="30" http-equiv="refresh">
-    <link href="http://www.piratesonline.us/images/favicon.ico" rel="icon"
-    type="image/png">
-    <script type="text/javascript">
+    <meta name="keywords" content="pirates of the caribbean, pirates, caribbean, minecraft, pirates minecraft, pirates mc, caribbean minecraft, minecraft pirates of the caribbean, potc, jack sparrow, jack sparrow minecraft, pirates of the caribbean videogame, pirates minecraft server, server, minecraft server, Disney server, Minecraft Disney, pirates online, pirates online retribution, legend of pirates online, pirates online minecraft" />
+    <meta name="description" content="Official website for Pirates Online Retribution Status Page" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+    <base href="." target="_parent">
+    <title>POR | Status Page</title>
+    <link href="https://piratesonline.us/images/favicon.ico" rel="icon">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,700' rel='stylesheet' type='text/css'>
+    <link href="assests/css/style-home.css" rel="stylesheet">
+    <link href="assests/css/overlay.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script src="https://mcapi.ca/js/ServerStatus.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kaushan+Script|Vollkorn" rel="stylesheet">
+    <script src="assests/js/PlayersOnline.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<script type="text/javascript">
     var url = "http://www.piratesonline.us/images/test_server_invite.png";
     var img = new Image();
     img.src = url;
@@ -48,24 +67,42 @@
     }
     </script>
 
-    <title>POR | STATUS</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript">
+    var url = "http://www.piratesmc.net/images/potcomc.png";
+    var img = new Image();
+    img.src = url;
+
+    img.onload = function()
+    {
+        // If the server is up, do this.
+        document.getElementById('minecraftUp').innerHTML = '<a style="border-bottom: 1px solid #91FF00" href="https://piratesmc.net/" target="_blank"><font color="#91FF00">Online!<\/font><\/a>';
+        document.getElementById("service4").style.borderColor = "#91FF00";
+        
+    }
+
+    img.onerror = function()
+    {
+        // If the server is down, do that.
+        document.getElementById('minecraftUp').innerHTML = '<font color="#FF0015">Offline!<\/font>';
+        document.getElementById("service4").style.borderColor = "#FF0015";
+    }
+    </script>
 </head>
-
 <body>
-    <div class="wrapper">
-        <center>
-            <img src="images/logo.png">
-        </center>
-
-
-        <div class="container">
+    <header role="banner">
+        <div id="logo">
+            <a href="https://piratesmc.net/">
+                <img src="https://piratesonline.us/images/banner.png" alt="Pirates Online">
+            </a>
+        </div>
+        </header><br><div class="wrapper">
+                    <div class="container">
             <center>
-                <h1><font size="6">Current status of Pirates Online Retribution
+                <h1 style="color: red;"><font size="6">Current status of Pirates Online Retribution
                 services</font>
                 </h1>
 
-
+<br><br>
                 <div class="text-center">
                     <div class="span2" id="session">
                         <div id="service1">
@@ -76,11 +113,6 @@
 
 
                             <h2 id="webUp">Loading…</h2>
-                        </div>
-
-
-                        <div class="uptime">
-                            &nbsp;
                         </div>
                     </div>
 
@@ -95,11 +127,6 @@
 
                             <h2 id="forumsUp">Loading…</h2>
                         </div>
-
-
-                        <div class="uptime">
-                            &nbsp;
-                        </div>
                     </div>
 
 
@@ -113,16 +140,21 @@
 
                             <h2 id="serverUp">Loading…</h2>
                         </div>
+                    </div>
+                <div class="span2" id="minecraft">
+                        <div id="service4">
+                            <div class="name">
+                                <font color="white" size=
+                                "5"><strong>MC</strong></font>
+                            </div>
 
 
-                        <div class="uptime">
-                            &nbsp;
+                            <h2 id="minecraftUp">Loading…</h2>
                         </div>
                     </div>
                 </div>
-
-
-                <center>
+<br>
+                <center style="color: orange;">
                     Please note that this site is not always 100% accurate.<br>
                     Unless a server appears as offline, you should be able to
                     connect just fine!
@@ -131,161 +163,56 @@
         </div>
     </div>
 
-    <hr class="dotted">
 
+<br><br><br>
 
-    <div class="text-center">
-        <div class="footer-line">
-            Created by <a href=
-            "https://piratesforums.com/members/glare-masters.2694/" target=
-            "_blank">Glare Masters</a>
+<footer role="contentinfo">
+        <div id="copyright">
+            <ul id="footer-icons">
+                        <li>
+                            <a href="https://www.facebook.com/POTCORetribution/" target="_blank">
+                                <span style="background: #3b5998;" data-hover="&#xf230;">&#xf230;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/POR_Pirates" target="_blank">
+                                <span style="background: #50abf1;" data-hover="&#xf099;">&#xf099;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=https://www.youtube.com/channel/UCjYJetkZG_5P1veHbGztoMg" target="_blank">
+                                <span style="background: #cc181e;" data-hover="&#xf16a;">&#xf16a;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discordapp.com/invite/MWnkGWB" target="_blank">
+                                <img src="https://cloud.githubusercontent.com/assets/13984226/12456214/9855b404-bf53-11e5-8f45-02f15af1bea6.png" style="height: 30px; background: white;"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/pirates_online_retribution/" target="_blank">
+                                <span style="background: #ff9900;" data-hover="&#xf16d;">&#xf16d;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitch.tv/lonewolfnoise/" target="_blank">
+                                <span style="background: #6600ff;" data-hover="&#xf1e8;">&#xf1e8;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://piratesonline.us/" target="_blank">
+                                <span style="background: #50abf1;" data-hover="&#xf286;">&#xf286;</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
         </div>
+    </footer>
 
-
-        <div class="footer-line">
-        </div>
-    </div>
-
-    <hr class="dotted">
-
-
-    <center>
-        <div class="span2" id="buttons">
-            <button class="button">Refreshing in <span class="timer" id=
-            "countdown"></span></button>
-        </div>
-        <script>
-        var seconds = 30;
-        function secondPassed() {
-        var minutes = Math.round((seconds - 30)/60);
-        var remainingSeconds = seconds % 60;
-        if (remainingSeconds < 10) {
-        remainingSeconds = "0" + remainingSeconds;  
-        }
-        document.getElementById('countdown').innerHTML = remainingSeconds;
-        if (seconds == 0) {
-        clearInterval(countdownTimer);
-        window.location.reload();
-        } else {
-        seconds--;
-        }
-        }
-
-        var countdownTimer = setInterval('secondPassed()', 1000);
-        </script><br>
-        <br>
-        <br>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://www.facebook.com/PotcoMemories"><font color="white">POTCO
-            Memories</font></a></button>
-        </div>
-        <div class="span2" id="buttons">
-		
-		
-            <button class="button"><a href=
-            "https://discordapp.com/invite/MWnkGWB"><font color=
-            "white">Discord</font></a></button>
-        </div>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://www.youtube.com/channel/UCjYJetkZG_5P1veHbGztoMg"><font color="white">
-            YouTube</font></a></button>
-        </div>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://www.facebook.com/POTCORetribution"><font color=
-            "white">Facebook</font></a></button>
-        </div>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://www.instagram.com/pirates_online_retribution/"><font color="white">
-            Instagram</font></a></button>
-        </div>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://twitter.com/POR_Pirates"><font color=
-            "white">Twitter</font></a></button>
-        </div>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "http://www.potcomc.us/"><font color="white">POTCO
-            MC</font></a></button>
-        </div>
-
-
-        <p><font size="3">Important Information / Upcoming Events</font>
-        </p>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://piratesforums.com/threads/por-open-alpha-contest-1.1063/"><font color="white">
-            Win 200K Gold!</font></a></button>
-        </div>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://piratesforums.com/threads/faq-por-launcher-troubleshooting.929/">
-            <font color="white">POR Launcher FAQ</font></a></button>
-        </div>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://piratesforums.com/threads/online-offline-status-pinger-for-por-assets.1173/#post-21545">
-            <font color="white">PvP Tourney</font></a></button>
-        </div>
-
-		<div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://www.piratesforums.com/threads/piratefest-possibility-of-pors-1st-annual-convention.1220/"><font color=
-            "white">PirateFest</font></a></button>
-        </div>
-
-        
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://www.piratesforums.com/threads/pirates-online-retribution-t-shirts.1165/">
-            <font color="white">POR Merchandise</font></a></button>
-        </div>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://piratesforums.com/account/upgrades"><font color=
-            "white">Support The Forums!</font></a></button>
-        </div>
-
-
-        <div class="span2" id="buttons">
-            <button class="button"><a href=
-            "https://www.piratesforums.com/members/?type=staff"><font color=
-            "white">Staff</font></a></button>
-        </div>
-    </center>
-
-
-    <div class="pull-right muted">
-    </div>
-
-
-    <div class="clearfix">
-    </div>
+                    <script src="assests/js/jquery.firefly-0.4.min.js">
+                    </script>
+                    <script src="assests/js/scripts.min.js?ver=2015.10.23">
+                    </script>
 </body>
+
 </html>
